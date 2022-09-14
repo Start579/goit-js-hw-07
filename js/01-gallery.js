@@ -14,7 +14,7 @@ return `<div class="gallery__item">
   </a>
 </div>`}).join("");
 
-gallery.insertAdjacentHTML("afterbegin", image); 
+gallery.insertAdjacentHTML("beforeend", image); 
 // Подключен клик и запрещен переход по ссылке
 gallery.addEventListener("click", onGalleryClick);
 
