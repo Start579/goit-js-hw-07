@@ -19,12 +19,12 @@ gallery.insertAdjacentHTML("beforeend", image);
 gallery.addEventListener("click", onGalleryClick);
 
  function onGalleryClick(evt) {
-  var lightbox = new SimpleLightbox('.gallery a', {'captionType' : captionSelector.alt });
-
     evt.preventDefault();
         
     if(evt.target.nodeName !== "IMG") {
         return;
     }
+  var lightbox = new SimpleLightbox('.gallery a', {captionType : "alt", captionsData : "alt", captionDelay : "250"});
+
 }
-console.log(galleryItems);
+// console.log(galleryItems);
