@@ -16,7 +16,7 @@ return `<div class="gallery__item">
 
 gallery.insertAdjacentHTML("beforeend", image); 
 // Подключен клик и запрещен переход по ссылке
-gallery.addEventListener("click", onGalleryClick);
+gallery.addEventListener("click", onGalleryClick, { once: true });
 
  function onGalleryClick(evt) {
     evt.preventDefault();
