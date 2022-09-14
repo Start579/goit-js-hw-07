@@ -19,16 +19,8 @@ gallery.insertAdjacentHTML("afterbegin", image);
 gallery.addEventListener("click", onGalleryClick);
 
  function onGalleryClick(evt) {
-// const instance = basicLightbox.create(
-// `<img src="${evt.target.dataset.source}" width="800" height="600">`)
-// Подключение Light Box "Открытие"
-// instance.show()
-//Закрытие по Escape
-// gallery.addEventListener("keydown", (evt) => {
-//   if (evt.code === "Escape") {
-//     instance.close();
-//   }
-// })
+  var lightbox = new SimpleLightbox('.gallery a', { /* options */ });
+
     evt.preventDefault();
         
     if(evt.target.nodeName !== "IMG") {
